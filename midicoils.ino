@@ -1,3 +1,6 @@
+/*  analogWrite(coil1, velocity) - Writes an analog value (PWM wave) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds
+The Coils are connected to TIP120
+
 #include <Wire.h>
 #include <MIDI.h>
 
@@ -6,7 +9,7 @@ const int coil2 =  5;
 
 void HandleNoteOn (byte channel, byte number, byte velocity) { 
   if (number == 36) {
-  analogWrite(coil1, velocity);
+  analogWrite(coil1, velocity); // Writes an analog value (PWM wave) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds
   delay(30);
   analogWrite(coil1, LOW); 
   }
