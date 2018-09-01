@@ -1,5 +1,7 @@
 /*  analogWrite(coil1, velocity) - Writes an analog value (PWM wave) to a pin. Can be used to light a LED at varying brightnesses or drive a motor at various speeds
-The Coils are connected to TIP120
+The Coils are connected to TIP120*/
+
+MIDI_CREATE_DEFAULT_INSTANCE();
 
 #include <Wire.h>
 #include <MIDI.h>
